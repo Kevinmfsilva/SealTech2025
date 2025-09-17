@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> SealTech a Lixeira de Condomínio</title>
+  <meta name="description" content="Lixeira vedada e personalizada para condomínios que separa recicláveis e gera renda. Escolha de 1 a 10 comportas e cor.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">♻️</div>
+        <span class="brand-name">SealTech</span>
+      </div>
+      <nav class="nav">
+        <a href="#inicio">Início</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#galeria">Imagens</a>
+        <a href="#comprar" class="btn btn-sm">Comprar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- === BLOCO DO VÍDEO (YouTube) === -->
+    <!-- Substitua o src abaixo pela URL incorporável do seu vídeo -->
+    <section class="section video-section">
+      <div class="container">
+        <h1 class="title">Conheça a Lixeira de Condomínio</h1>
+        <p class="subtitle">
+          Vedada, organizada e projetada para transformar recicláveis em renda para o seu condomínio.
+        </p>
+
+        <div class="video-embed" aria-label="Vídeo de apresentação do projeto">
+          <!-- Cole aqui o código do YouTube embed (só trocar o src) -->
+          <iframe
+            src="https://youtu.be/j1TlCYrH9WM?si=yHDAsnswgn-y2tMU"
+            title="Apresentação da Lixeira Inteligente"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Destaque -->
+    <section class="section highlight">
+      <div class="container grid-2">
+        <div class="card">
+          <h2>Como o projeto se paga?</h2>
+          <p>
+            Os recicláveis separados com qualidade são vendidos para cooperativas/empresas.
+            A renda volta para o condomínio, reduz custos e pode financiar melhorias—até que a
+            lixeira se pague sozinha.
+          </p>
+        </div>
+        <div class="card">
+          <h2>Personalização Completa</h2>
+          <p>
+            De <strong>1 a 10 comportas</strong>, escolha a <strong>cor</strong> e o layout ideal para o seu espaço.
+            Protótipo em escala 1/10 pronto para demonstrações.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section id="beneficios" class="section">
+      <div class="container">
+        <h2 class="section-title">Benefícios</h2>
+        <div class="benefits">
+          <div class="benefit">
+            <div class="benefit-icon" aria-hidden="true">🧼</div>
+            <h3>Ambiente Limpo</h3>
+            <p>Armazenamento vedado e organizado, sem mau cheiro.</p>
+          </div>
+          <div class="benefit">
+            <div class="benefit-icon" aria-hidden="true">💰</div>
+            <h3>Gera Renda</h3>
+            <p>Venda de recicláveis volta em benefício do condomínio.</p>
+          </div>
+          <div class="benefit">
+            <div class="benefit-icon" aria-hidden="true">⚙️</div>
+            <h3>Uso Simples</h3>
+            <p>Selecione o tipo de resíduo, insira e pronto.</p>
+          </div>
+          <div class="benefit">
+            <div class="benefit-icon" aria-hidden="true">🎨</div>
+            <h3>Personalizável</h3>
+            <p>Até 10 comportas e várias cores para combinar com o ambiente.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" class="section">
+      <div class="container">
+        <h2 class="section-title">Imagens do Protótipo</h2>
+        <div class="gallery">
+          <!-- Substitua os placeholders pelas suas imagens -->
+          <img src="IMG/20250907_135204.jpg" alt="Protótipo da lixeira — imagem 1">
+          <img src="IMG/20250907_135219.jpg" alt="Protótipo da lixeira — imagem 2">
+          <img src="IMG/20250907_135227.jpg" alt="Protótipo da lixeira — imagem 3">
+          <img src="IMG/1000065394.jpg" alt="Protótipo da lixeira — imagem 4">
+        </div>
+      </div>
+    </section>
+
+    <!-- Compra -->
+    <section id="comprar" class="section section-accent">
+      <div class="container">
+        <h2 class="section-title">Configure e Solicite o Seu orçamento</h2>
+
+        <form id="orderForm" class="form card">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="nome">Nome*</label>
+              <input type="text" id="nome" name="nome" required placeholder="Seu nome completo" />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail*</label>
+              <input type="email" id="email" name="email" required placeholder="voce@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone/WhatsApp</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" />
+            </div>
+            <div class="form-group">
+              <label for="comportas">Número de comportas*</label>
+              <input type="number" id="comportas" name="comportas" min="1" max="10" value="3" required />
+            </div>
+            <div class="form-group">
+              <label for="cor">Cor da lixeira*</label>
+              <select id="cor" name="cor" required>
+                <option value="">Selecione</option>
+                <option>Verde</option>
+                <option>Branco</option>
+                <option>Preto</option>
+                <option>Cinza</option>
+                <option>Rosa</option>
+                <option>Vermelha</option>
+                <option>Azul</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="obs">Observações</label>
+              <textarea id="obs" name="obs" rows="3" placeholder="Ex.: Local de instalação, preferências, etc."></textarea>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Solicitar orçamento</button>
+            <p class="form-note">*Campos obrigatórios</p>
+          </div>
+
+          <!-- Resumo mostrado via JS -->
+          <div id="orderSummary" class="order-summary" hidden></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> SealTech — Projeto sustentável para condomínios.</p>
+      <p>Contato: <a href="mailto:contato@seudominio.com">SealTech@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
